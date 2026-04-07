@@ -1,25 +1,21 @@
 # Ghost-2077: Advanced Endpoint Threat & Malware Analysis PoC
 
-⚠️ **STRICTLY FOR EDUCATIONAL & RESEARCH PURPOSES ONLY** ⚠️
+**⚠️ STRICTLY FOR EDUCATIONAL & RESEARCH PURPOSES ONLY ⚠️**
 
-This repository contains a Proof of Concept (PoC) demonstrating techniques commonly found in sophisticated Remote Access Trojans (RATs) and endpoint enumeration tools.
+Hey everyone! Welcome to Ghost-2077. Just a quick heads-up: this is a personal project I built entirely on my own from scratch. 
 
----
+I created this Proof of Concept (PoC) simply because I have a huge curiosity about how things work under the hood. I wanted to push my own limits and explore the actual mechanics of how sophisticated Remote Access Trojans (RATs) and offensive tools operate. 
 
-## Disclaimer
+**Why did I build this?**
+I strongly believe that to build a solid defense, we need to understand how the offense plays the game. By diving deep into modern malware and evasion techniques, my goal is to learn how to:
+* Spot these kinds of threats more effectively.
+* Improve endpoint monitoring and detection.
+* Understand what makes a good Incident Response playbook.
 
-This project was developed strictly for **academic research** and to understand the inner workings of modern malware, evasion techniques, and offensive toolchains.
+**The Serious Disclaimer (Please Read!):**
+Let me be perfectly clear: I am sharing this codebase **strictly** for fellow students, security researchers, and anyone who wants to learn. 
 
-Understanding these offensive mechanics is essential for:
-
-* Building robust defensive strategies
-* Improving endpoint monitoring
-* Developing Incident Response playbooks
-* Security research and malware analysis
-
-The author assumes **NO responsibility** for any misuse.
-Do **NOT** compile or deploy this project on any system without **explicit authorization**.
-
+I take **ABSOLUTELY ZERO RESPONSIBILITY** for how you use this code. Please be smart and ethical. Do **NOT** compile, deploy, or run this project on any system, network, or machine unless you own it or have explicit, authorized permission to do so.
 ---
 
 # 🛠️ Tech Stack & Compilation
