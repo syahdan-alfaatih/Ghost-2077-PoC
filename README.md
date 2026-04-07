@@ -113,21 +113,6 @@ If you are a security researcher or malware analyst looking to study this PoC, y
 
 ---
 
-# 📁 Project Structure
-
-```
-Ghost-2077/
-│
-├── src/                # Core source files
-├── include/            # Headers
-├── resources/          # Payload resources (.rc / .res)
-├── build.bat           # Build script
-├── LICENSE             # License file
-└── README.md           # Documentation
-```
-
----
-
 # 🔬 Research Scope
 
 This PoC is intended for:
