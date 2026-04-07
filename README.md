@@ -16,6 +16,7 @@ I strongly believe that to build a solid defense, we need to understand how the 
 Let me be perfectly clear: I am sharing this codebase **strictly** for fellow students, security researchers, and anyone who wants to learn. 
 
 I take **ABSOLUTELY ZERO RESPONSIBILITY** for how you use this code. Please be smart and ethical. Do **NOT** compile, deploy, or run this project on any system, network, or machine unless you own it or have explicit, authorized permission to do so.
+
 ---
 
 # 🛠️ Tech Stack & Compilation
@@ -109,6 +110,7 @@ If you are a security researcher or malware analyst looking to study this PoC, y
    * **Collector/Screen Capture:** `windowscodecs.lib`, `d3d11.lib`, `dxgi.lib`, `ole32.lib`, `gdi32.lib`
 
 *Self-assembly is strictly required to ensure this code is only utilized by individuals who fully understand its mechanics and implications.*
+
 ---
 
 # 📁 Project Structure
