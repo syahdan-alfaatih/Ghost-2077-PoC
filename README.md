@@ -95,22 +95,24 @@ Implemented concepts include:
 
 ---
 
-# 🚀 Building the Project
+## 🚀 Building the Project
 
-⚠️ **Only build inside an isolated virtual machine environment**
+*(Note: Do not compile or build this outside of a controlled, isolated virtual machine environment).*
 
-A `build.bat` script is provided to compile the project using Developer Command Prompt for Visual Studio:
+For safety and to prevent automated or accidental execution by malicious actors, the build script (`build.bat`) and all compiled binaries are intentionally **NOT** included in this repository. 
 
-```bat
-build.bat
-```
+If you are a security researcher or malware analyst looking to study this PoC, you must manually assemble and compile the project using the **Developer Command Prompt for Visual Studio**.
 
-This script will:
+**Manual Compilation Guidelines:**
+1. **Resource Compilation:** First, use the Microsoft Resource Compiler (`rc.exe`) to compile the payload resource file located at `src\loader\resource.rc` into a `.res` object.
+2. **Source Compilation:** Use the MSVC Compiler (`cl.exe`) configured for the C++17 standard (`/std:c++17`). You will need to compile all `.cpp` files located within the `src/` directories (`core`, `persistence`, `loader`, `crypto`, `collector`, and `c2`).
+3. **Linking Dependencies:** During compilation, ensure you link the following native Win32 libraries for the modules to function correctly:
+   * **Core & System:** `user32.lib`, `advapi32.lib`, `shell32.lib`, `shlwapi.lib`, `psapi.lib`
+   * **Networking & C2:** `winhttp.lib`, `dnsapi.lib`, `ws2_32.lib`
+   * **Cryptography:** `bcrypt.lib`
+   * **Collector/Screen Capture:** `windowscodecs.lib`, `d3d11.lib`, `dxgi.lib`, `ole32.lib`, `gdi32.lib`
 
-* Compile payload resources using `rc.exe`
-* Compile main project using `cl.exe`
-* Link required Win32 libraries
-
+*Self-assembly is strictly required to ensure this code is only utilized by individuals who fully understand its mechanics and implications.*
 ---
 
 # 📁 Project Structure
