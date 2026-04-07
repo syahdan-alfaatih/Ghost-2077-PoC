@@ -1,0 +1,14 @@
+# Ignore compiled binaries and objects
+*.exe
+*.bin
+*.dll
+*.obj
+*.o
+*.out
+
+# Specifically ignore the payload
+src/loader/payload.bin
+
+# Ignore IDE/Editor configs
+.vscode/
+.idea/
